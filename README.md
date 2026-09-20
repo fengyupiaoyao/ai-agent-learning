@@ -50,3 +50,27 @@ CLI Streaming Chatbot
 - parallel.py
 - tutor_chain.py
 - interview_bot.py
+
+# Day 05
+
+## Learned
+
+- stream_basic.py
+- prompt_stream.py
+- async_stream.py
+- api.py
+
+# Day 06
+
+## Learned
+
+- 知道 Trace 是什么
+- 知道 Run 是什么
+- 能配置 LangSmith
+- 能看到一次 LLM 调用
+- 能看到 Chain
+- 能看到 Error
+- 理解 Token Usage
+- 理解 Latency
+- 理解 Streaming vs Tracing
+- 完成 Python Tutor
