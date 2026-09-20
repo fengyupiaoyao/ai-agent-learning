@@ -41,3 +41,12 @@ CLI Streaming Chatbot
 - prompt | structured_model
 - 能拿 result.xxx
 - 完成 Python Question Classifier
+
+# Day 04
+
+## Learned
+
+- runnable_basic.py
+- parallel.py
+- tutor_chain.py
+- interview_bot.py
