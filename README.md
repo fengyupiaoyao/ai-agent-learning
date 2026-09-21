@@ -1,6 +1,24 @@
 # ai-agent-learning
 ai-agent-learning
 
+                    AI Agent Developer
+                           │
+          ┌────────────────┼────────────────┐
+          ↓                ↓                ↓
+       LLM能力          Agent能力        工程能力
+          │                │                │
+     Prompt/Model      Tool Calling      API
+     Structured       Agent Loop        FastAPI
+     Output           Memory            Async
+     Streaming        RAG               DB
+     Context          Workflow          Docker
+          │                │                │
+          └────────────────┼────────────────┘
+                           ↓
+                    LangGraph
+                           ↓
+                  Production Agent
+                  
 # Day 01
 
 ## Learned
@@ -74,3 +92,9 @@ CLI Streaming Chatbot
 - 理解 Latency
 - 理解 Streaming vs Tracing
 - 完成 Python Tutor
+
+# Day 07
+
+## Learned
+
+- LLM Application Development
