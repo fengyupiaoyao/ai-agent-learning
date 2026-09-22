@@ -98,3 +98,28 @@ CLI Streaming Chatbot
 ## Learned
 
 - LLM Application Development
+
+# Day 08
+
+## Learned
+
+Tool Calling 
+
+- LLM → Tool Call
+- Tool → Result
+- Agent Loop
+
+# Day 09
+
+## Learned
+
+- 独立设计一个 Agent Tool
+- 使用 @tool
+- 使用 Pydantic 定义参数
+- 理解 Tool Schema
+- 设计清晰的 Tool Description
+- 处理 Tool 参数错误
+- 处理 Tool 执行异常
+- 编写多个 Tool
+- 让 LLM 正确选择 Tool
+- 理解什么样的函数不适合直接暴露给 Agent
