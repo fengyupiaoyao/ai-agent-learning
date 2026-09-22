@@ -123,3 +123,9 @@ Tool Calling
 - 编写多个 Tool
 - 让 LLM 正确选择 Tool
 - 理解什么样的函数不适合直接暴露给 Agent
+
+# Day 09
+
+## Learned
+
+-Agent Loop / Tool Execution Orchestration
