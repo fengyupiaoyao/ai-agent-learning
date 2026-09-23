@@ -338,3 +338,63 @@ State
 Persistence
 =
 Stateful Agent
+
+# Day 15
+
+## Learned Structured Output
+
+## 1. Structured Output
+
+Structured Output makes LLM responses conform to a predefined schema.
+
+## 2. Pydantic
+
+Pydantic provides:
+
+- Data validation
+- Type definitions
+- Schema generation
+- Structured Python objects
+
+## 3. Schema
+
+A schema defines:
+
+- Field names
+- Field types
+- Field descriptions
+- Allowed values
+
+## 4. Structured Output vs Tool Calling
+
+Structured Output:
+
+LLM
+↓
+Structured Data
+
+Tool Calling:
+
+LLM
+↓
+Tool
+↓
+Tool Result
+
+## 5. LLM Router
+
+LLM
+↓
+Structured Output
+↓
+Intent
+↓
+Python Router
+↓
+Tool
+
+## 6. Key Engineering Principle
+
+Use LLM for language understanding.
+
+Use deterministic code for business logic.
