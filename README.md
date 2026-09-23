@@ -124,8 +124,76 @@ Tool Calling
 - 让 LLM 正确选择 Tool
 - 理解什么样的函数不适合直接暴露给 Agent
 
-# Day 09
+# Day 10
 
 ## Learned
 
 -Agent Loop / Tool Execution Orchestration
+
+# Day 11
+
+## Learned
+
+- 使用 LangChain create_agent()
+- 给 Agent 注册多个 Tool
+- 理解 Agent 的输入输出
+- 理解 Agent 如何自动调用 Tool
+- 理解 Agent Loop 与 create_agent 的关系
+- 使用 system prompt
+- 使用 Agent State 的基础能力
+- 使用 streaming
+- 使用 LangSmith 观察 Agent
+- 对比“手写 Agent”和“LangChain Agent”
+
+# Day 12
+
+## Learned
+
+## 1. What is a Tool?
+
+A Tool is a function that an Agent can call.
+
+## 2. Tool Calling Flow
+
+User
+↓
+LLM
+↓
+Tool Call
+↓
+Tool Execution
+↓
+Tool Result
+↓
+LLM
+↓
+Final Answer
+
+## 3. Tool Structure
+
+A Tool contains:
+
+- name
+- description
+- input schema
+- function
+- output
+
+## 4. Important Insight
+
+The LLM does not directly execute Python code.
+
+The LLM decides:
+
+- which tool to call
+- what arguments to provide
+
+The application executes the tool.
+
+## 5. Tool Design Principles
+
+- Clear tool name
+- Clear description
+- Strong type hints
+- Small responsibilities
+- Predictable output
