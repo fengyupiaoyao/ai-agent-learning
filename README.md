@@ -197,3 +197,85 @@ The application executes the tool.
 - Strong type hints
 - Small responsibilities
 - Predictable output
+
+# Day 13
+
+## Learned
+
+## 1. Agent Loop
+
+Agent repeatedly performs:
+
+LLM
+↓
+Decision
+↓
+Tool Call
+↓
+Tool Result
+↓
+LLM
+↓
+Decision
+↓
+...
+
+## 2. ReAct
+
+ReAct can be understood as:
+
+Reasoning
++
+Acting
+
+The important engineering concept is:
+
+Decision
+↓
+Action
+↓
+Observation
+↓
+Decision
+
+## 3. Workflow vs Agent
+
+Workflow:
+
+A → B → C → D
+
+The developer defines the execution path.
+
+Agent:
+
+LLM → Tool A
+    → Tool B
+    → Tool C
+
+The LLM dynamically decides the next action.
+
+## 4. Message Flow
+
+HumanMessage
+↓
+AIMessage
+↓
+ToolMessage
+↓
+AIMessage
+↓
+ToolMessage
+↓
+AIMessage
+
+## 5. Key Insight
+
+The core of an Agent is not simply having tools.
+
+The core is:
+
+LLM-driven dynamic decision making
++
+Tool execution
++
+Iteration
