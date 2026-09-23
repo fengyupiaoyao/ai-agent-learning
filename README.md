@@ -279,3 +279,62 @@ LLM-driven dynamic decision making
 Tool execution
 +
 Iteration
+
+# Day 14
+
+## Learned Agent State & Memory
+
+## 1. Message History
+
+Message History stores previous conversation messages.
+
+## 2. State
+
+State contains the data required by an Agent during execution.
+
+Example:
+
+State
+├── messages
+├── current_task
+├── tool_results
+└── other runtime data
+
+## 3. Memory
+
+Memory allows an Agent to retain and reuse information from previous interactions.
+
+## 4. Thread
+
+A thread represents an independent conversation/execution context.
+
+## 5. Checkpointer
+
+A checkpointer stores Agent state so it can be restored later.
+
+## 6. thread_id
+
+thread_id identifies a conversation/thread.
+
+Different thread_ids should have independent state.
+
+## 7. Important Difference
+
+State:
+Current runtime data.
+
+Message History:
+Conversation messages.
+
+Memory:
+Mechanism for retaining/reusing past information.
+
+## 8. Key Insight
+
+Agent
++
+State
++
+Persistence
+=
+Stateful Agent
