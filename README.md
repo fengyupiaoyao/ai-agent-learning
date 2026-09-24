@@ -398,3 +398,57 @@ Tool
 Use LLM for language understanding.
 
 Use deterministic code for business logic.
+
+# Day 16
+
+## Learned 实战
+
+AI Agent
+│
+├── Model
+│
+├── Prompt
+│
+├── Tool
+│
+├── Tool Calling
+│
+├── Agent Loop
+│
+├── State
+│
+├── Conversation History
+│
+├── Memory
+│
+└── Structured Output
+      │
+      └── Pydantic
+
+最终形成：
+
+                 ┌──────────────┐
+                 │     User     │
+                 └──────┬───────┘
+                        ↓
+                 ┌──────────────┐
+                 │    Agent     │
+                 └──────┬───────┘
+                        ↓
+               ┌─────────────────┐
+               │       LLM       │
+               └────────┬────────┘
+                        ↓
+                 Need a Tool?
+                   /       \
+                 Yes        No
+                  ↓          ↓
+                Tool       Answer
+                  ↓
+             Tool Result
+                  ↓
+                 LLM
+                  ↓
+        Structured Output
+                  ↓
+          ResearchResult
