@@ -1,10 +1,13 @@
 from langchain_community.document_loaders import DirectoryLoader
 from langchain_community.document_loaders import TextLoader
+from pathlib import Path
+
+file_path = Path(__file__).resolve().parent / "data"
 
 
 def load_documents():
     loader = DirectoryLoader(
-        "data",
+        file_path,
         glob="**/*.md",
         loader_cls=TextLoader,
         loader_kwargs={"encoding": "utf-8"},

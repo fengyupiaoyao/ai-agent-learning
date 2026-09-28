@@ -478,3 +478,25 @@ Loader
  Loader 和 Splitter 有什么区别？
  为什么 PDF 通常会产生多个 Document？
  metadata 为什么对 RAG 很重要？
+
+# Day 17
+
+## Learned RAG Split
+
+理论
+ 为什么需要 Chunking
+ 什么是 Chunk
+ 什么是 chunk_size
+ 什么是 chunk_overlap
+ 为什么需要 overlap
+ Loader 和 Splitter 的区别
+ split_text() 和 split_documents() 的区别
+Coding
+ RecursiveCharacterTextSplitter
+ split_text()
+ split_documents()
+ TXT → Document → Chunk
+ Markdown → Document → Chunk
+ 保留 metadata
+ 对比不同 chunk_size
+ 对比不同 overlap
