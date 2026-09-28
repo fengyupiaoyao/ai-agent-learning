@@ -1,0 +1,9 @@
+AI Agent 是一种能够利用大语言模型进行推理、
+调用工具并执行任务的软件系统。
+
+Agent 通常包含：
+1. Model
+2. Tools
+3. State
+4. Memory
+5. Execution Loop

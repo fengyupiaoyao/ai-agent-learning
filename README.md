@@ -452,3 +452,29 @@ AI Agent
         Structured Output
                   ↓
           ResearchResult
+
+# Day 17
+
+## Learned RAG
+
+基础
+ 创建 Document
+ 理解 page_content
+ 理解 metadata
+Loader
+ TextLoader
+ Markdown Loader
+ PyPDFLoader
+ DirectoryLoader
+实战
+ 加载 TXT
+ 加载 Markdown
+ 加载 PDF
+ 批量加载 Markdown
+ 打印 metadata
+ 统计 Document 数量
+理解
+ Loader 是干什么的？
+ Loader 和 Splitter 有什么区别？
+ 为什么 PDF 通常会产生多个 Document？
+ metadata 为什么对 RAG 很重要？
