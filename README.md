@@ -536,3 +536,42 @@ Coding
  理解中文/日文/英文多语言支持
  理解 Embedding 的成本和延迟
  理解 Vector Search 不等于完整搜索系统
+
+# Day 20
+
+## Learned RAG
+
+一定要把这个架构记住：
+
+             Document
+                 │
+                 ▼
+          Text Splitter
+                 │
+                 ▼
+              Chunks
+                 │
+                 ▼
+          Embedding Model
+                 │
+                 ▼
+              Vectors
+                 │
+                 ▼
+          ┌──────────────┐
+          │ Vector Store │
+          └──────────────┘
+                 ▲
+                 │
+              Query
+                 │
+                 ▼
+          Query Embedding
+                 │
+                 ▼
+        Similarity Search
+                 │
+                 ▼
+          Relevant Chunks
+
+这是后面 RAG 的核心。
