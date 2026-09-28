@@ -479,7 +479,7 @@ Loader
  为什么 PDF 通常会产生多个 Document？
  metadata 为什么对 RAG 很重要？
 
-# Day 17
+# Day 18
 
 ## Learned RAG Split
 
@@ -500,3 +500,39 @@ Coding
  保留 metadata
  对比不同 chunk_size
  对比不同 overlap
+
+# Day 19
+
+## Learned RAG
+
+Embedding Model
+├── 语义质量
+├── 向量维度
+├── 语言支持
+├── 延迟
+├── 成本
+├── 上下文长度
+└── 部署方式
+
+理论
+ 什么是 Embedding
+ 什么是 Vector
+ 什么是 Vector Dimension
+ 什么是 Similarity
+ 什么是 Cosine Similarity
+ Query Embedding
+ Document Embedding
+Coding
+ 调用 Embedding API
+ 获取 Vector
+ 查看 Vector Dimension
+ 自己实现 Cosine Similarity
+ 比较两个文本的相似度
+ 使用 LangChain embed_query()
+ 使用 LangChain embed_documents()
+ Document → Chunk → Vector
+工程
+ 理解 Embedding Model 不能随便混用
+ 理解中文/日文/英文多语言支持
+ 理解 Embedding 的成本和延迟
+ 理解 Vector Search 不等于完整搜索系统
