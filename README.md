@@ -575,3 +575,39 @@ Coding
           Relevant Chunks
 
 这是后面 RAG 的核心。
+
+# Day 21
+
+## Learned RAG
+
+                 Knowledge Base
+                       │
+                 ┌─────┴─────┐
+                 ↓           ↓
+             Documents     Metadata
+                 │
+                 ↓
+              Chunking
+                 │
+                 ↓
+             Embedding
+                 │
+                 ↓
+            Vector Store
+                 │
+                 ↓
+             Retriever
+                 │
+        ┌────────┴────────┐
+        ↓                 ↓
+   Similarity            MMR
+        │                 │
+        └────────┬────────┘
+                 ↓
+          Relevant Docs
+                 │
+                 ↓
+              RAG
+                 │
+                 ↓
+                LLM
