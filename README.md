@@ -645,3 +645,53 @@ Coding
 # Day 23
 
 ## Learned RAG
+
+                 RAG
+                  │
+          ┌───────┴────────┐
+          ↓                ↓
+       Indexing         Retrieval
+          │                │
+          ↓                ↓
+      Documents          Query
+          │                │
+          ↓                ↓
+      Chunking         Embedding
+          │                │
+          ↓                ↓
+      Embedding       Vector Search
+          │                │
+          ↓          ┌─────┴──────┐
+     Vector Store     ↓            ↓
+                  Metadata       Top-K
+                     │            │
+                     └─────┬──────┘
+                           ↓
+                    Relevant Docs
+                           │
+                           ↓
+                        Context
+                           │
+                           ↓
+                         Prompt
+                           │
+                           ↓
+                          LLM
+                           │
+                           ↓
+                         Answer
+
+# Day 24
+
+## Learned RAG
+
+                    Evaluation
+                        │
+          ┌─────────────┴─────────────┐
+          ↓                           ↓
+   Retrieval Eval              Answer Eval
+          │                           │
+          ↓                           ↓
+     Recall@K                      Correctness
+     MRR                            Relevance
+     Hit@K
