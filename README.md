@@ -611,3 +611,33 @@ Coding
                  │
                  ↓
                 LLM
+
+# Day 22
+
+## Learned RAG
+
+        AI Agent Knowledge RAG
+                  │
+                  ↓
+             User Query
+                  │
+                  ↓
+              Retriever
+                  │
+                  ↓
+          Relevant Documents
+                  │
+                  ↓
+                Context
+                  │
+                  ↓
+               Prompt
+                  │
+                  ↓
+                 LLM
+                  │
+                  ↓
+                Answer
+                  │
+                  ↓
+               Sources
