@@ -695,3 +695,21 @@ Coding
      Recall@K                      Correctness
      MRR                            Relevance
      Hit@K
+
+# Day 25
+
+## Learned RAG
+
+                    ┌── Rewrite ────────┐
+                    │                   │
+Question ───────────┼── Multi-Query ────┼── Retriever
+                    │                   │
+                    └── HyDE ───────────┘
+                                            ↓
+                                        Documents
+                                            ↓
+                                           LLM
+                                            ↓
+                                         Answer
+                                            ↓
+                                       Evaluation
