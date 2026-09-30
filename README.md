@@ -713,3 +713,45 @@ Question ───────────┼── Multi-Query ────┼�
                                          Answer
                                             ↓
                                        Evaluation
+
+# Day 26
+
+## Learned RAG
+
+# Day 27
+
+## Learned RAG
+
+# Day 28
+
+## Learned RAG
+
+                    Agent
+                      │
+             ┌────────┴────────┐
+             │                 │
+            LLM              Tools
+             │                 │
+             │            ┌────┼────┐
+             │            │    │    │
+             │          Search RAG  API
+             │
+             ▼
+          Decision
+             │
+             ▼
+        Tool Calling
+             │
+             ▼
+        Tool Execution
+             │
+             ▼
+         Observation
+             │
+             ▼
+           State
+             │
+             ▼
+            LLM
+             │
+             └──────────→ Loop

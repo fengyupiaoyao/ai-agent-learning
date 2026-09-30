@@ -3,3 +3,6 @@
 
 # 本地密钥配置
 .env
+
+# Chroma 向量数据库
+chroma_db/
