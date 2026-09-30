@@ -781,3 +781,39 @@ Tool Routing
 完整 Agent
   ↓
 测试
+
+# Day 30
+
+## Learned Agent
+
+State = Agent 当前运行过程中需要携带的信息。
+
+                     User
+                          │
+                          ↓
+                 ┌────────────────┐
+                 │     Agent      │
+                 └───────┬────────┘
+                         │
+          ┌──────────────┴──────────────┐
+          ↓                             ↓
+   Short-term Memory              Long-term Memory
+          │                             │
+     Checkpointer                     Store
+          │                             │
+     thread_id                       user_id
+          │                             │
+          └──────────────┬──────────────┘
+                         ↓
+                 Context Engineering
+                         ↓
+                        LLM
+RAG VS Memory
+|      | RAG       | Memory      |
+| ---- | --------- | ----------- |
+| 数据来源 | 外部知识库     | Agent/用户历史  |
+| 典型对象 | Documents | User facts  |
+| 查询   | Query     | User/Thread |
+| 目的   | 知识增强      | 个性化/连续性     |
+| 更新   | 知识库更新     | Agent 交互产生  |
+| 例子   | 公司技术文档    | 用户喜欢 Python |
