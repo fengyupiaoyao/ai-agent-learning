@@ -724,7 +724,7 @@ Question ───────────┼── Multi-Query ────┼�
 
 # Day 28
 
-## Learned RAG
+## Learned Agent
 
                     Agent
                       │
@@ -755,3 +755,29 @@ Question ───────────┼── Multi-Query ────┼�
             LLM
              │
              └──────────→ Loop
+
+# Day 29
+
+## Learned Agent
+
+09:00
+  ↓
+Tool Schema
+  ↓
+Pydantic 参数校验
+  ↓
+bind_tools
+  ↓
+strict
+  ↓
+Tool Execution Error
+  ↓
+ToolMessage(status="error")
+  ↓
+Structured Output
+  ↓
+Tool Routing
+  ↓
+完整 Agent
+  ↓
+测试
