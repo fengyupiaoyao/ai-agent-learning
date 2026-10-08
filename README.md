@@ -874,3 +874,22 @@ Memory Retrieval
 Context
  ↓
 Agent
+
+
+# Day 31
+
+## Learned Langgraph Agent State
+
+Agent State
+    │
+    ├── Messages
+    │
+    ├── Task State
+    │
+    ├── Tool Results
+    │
+    ├── Retrieved Documents
+    │
+    ├── Intermediate Results
+    │
+    └── Metadata
