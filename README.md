@@ -817,3 +817,7 @@ RAG VS Memory
 | 目的   | 知识增强      | 个性化/连续性     |
 | 更新   | 知识库更新     | Agent 交互产生  |
 | 例子   | 公司技术文档    | 用户喜欢 Python |
+
+# Day 31
+
+## Learned Langgraph
