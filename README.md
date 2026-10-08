@@ -876,7 +876,7 @@ Context
 Agent
 
 
-# Day 31
+# Day 32
 
 ## Learned Langgraph Agent State
 
@@ -893,3 +893,38 @@ Agent State
     ├── Intermediate Results
     │
     └── Metadata
+
+# Day 33
+
+## Learned Langgraph Agent Interrupt
+
+                    ┌──────────────┐
+                    │     User     │
+                    └──────┬───────┘
+                           ↓
+                    ┌──────────────┐
+                    │    Agent     │
+                    └──────┬───────┘
+                           ↓
+                    ┌──────────────┐
+                    │  Tool Call   │
+                    └──────┬───────┘
+                           ↓
+                    High Risk?
+                     /           \
+                   No             Yes
+                   ↓               ↓
+                Tool          interrupt()
+                                   ↓
+                              Checkpoint
+                                   ↓
+                               Human
+                              /      \
+                        Approve      Reject
+                           ↓            ↓
+                         Tool          END
+                           ↓
+                         Agent
+                           ↓
+                          END
+
