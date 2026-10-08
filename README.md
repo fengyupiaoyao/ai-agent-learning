@@ -928,3 +928,43 @@ Agent State
                            ↓
                           END
 
+# Day 34
+
+## Learned Langgraph Agent Persistence
+
+                         User
+                          │
+                          ↓
+                    ┌───────────┐
+                    │ thread_id │
+                    └─────┬─────┘
+                          ↓
+                    ┌───────────┐
+                    │ Checkpoint│
+                    └─────┬─────┘
+                          ↓
+                       State
+                          ↓
+                     ┌────────┐
+                     │ Agent  │
+                     └───┬────┘
+                         ↓
+                     Tool Call
+                         ↓
+                   High Risk?
+                    /       \
+                  No         Yes
+                  ↓           ↓
+                Tool      interrupt
+                              ↓
+                         Checkpoint
+                              ↓
+                            Human
+                              ↓
+                       Command(resume)
+                              ↓
+                           Agent
+                              ↓
+                         Checkpoint
+                              ↓
+                            END
