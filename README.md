@@ -820,4 +820,57 @@ RAG VS Memory
 
 # Day 31
 
-## Learned Langgraph
+## Learned Langgraph Agent Loop
+
+                              USER
+                               │
+                               ↓
+                        ┌─────────────┐
+                        │   THREAD    │
+                        └──────┬──────┘
+                               ↓
+                        ┌─────────────┐
+                        │    STATE    │
+                        └──────┬──────┘
+                               ↓
+                        ┌─────────────┐
+                        │    AGENT    │
+                        │     LLM     │
+                        └──────┬──────┘
+                               ↓
+                       Conditional Edge
+                         /           \
+                        /             \
+                  Tool Call          Final
+                     ↓                ↓
+               ┌──────────┐          END
+               │ ToolNode │
+               └────┬─────┘
+                    ↓
+                Tool Result
+                    ↓
+                  State
+                    ↓
+                  Agent
+                    ↑
+                    │
+                    └──── Loop
+
+
+Memory:
+State
+ ↓
+Checkpointer
+ ↓
+thread_id
+
+Long-term:
+User
+ ↓
+Store
+ ↓
+Memory Retrieval
+ ↓
+Context
+ ↓
+Agent
