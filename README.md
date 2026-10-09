@@ -998,3 +998,15 @@ RAG → Tool Calling → Agent → State → Memory → LangGraph → HITL → P
                            │
                            ▼
                         React UI
+
+
+# Day 36
+
+## Learned LangGraph Streaming + FastAPI + SSE
+
+- 理解 LangGraph 的 astream() 和 stream_mode
+- 理解 messages 与 custom 两种流式模式
+- 成功启动 FastAPI 服务
+- 通过 POST /chat/stream 获取 SSE 响应
+- 使用 httpx 客户端实时打印模型输出
+- 能够解释 StreamingResponse 和 SSE 的区别
