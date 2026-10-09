@@ -1022,3 +1022,15 @@ RAG → Tool Calling → Agent → State → Memory → LangGraph → HITL → P
 - FastAPI 接口可以持续返回 SSE token
 - 能够说明 MemorySaver 重启后为什么会丢失数据
 - 能够区分短期记忆与长期记忆
+
+# Day 37
+
+## Learned LangGraph Streaming + FastAPI + SSE + Persistence(sqlite)
+
+- 理解 Checkpoint、Thread 和 Store 的区别
+- 安装并使用 AsyncSqliteSaver
+- 将 FastAPI Agent 接入 SQLite
+- 同一 thread_id 可以恢复历史消息
+- 重启服务后仍能恢复之前的会话
+- 使用 aget_state_history 查看 checkpoint
+- 理解 SQLite 与 PostgreSQL 的适用场景
