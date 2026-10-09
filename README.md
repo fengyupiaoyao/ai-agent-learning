@@ -1023,7 +1023,7 @@ RAG → Tool Calling → Agent → State → Memory → LangGraph → HITL → P
 - 能够说明 MemorySaver 重启后为什么会丢失数据
 - 能够区分短期记忆与长期记忆
 
-# Day 37
+# Day 38
 
 ## Learned LangGraph Streaming + FastAPI + SSE + Persistence(sqlite)
 
@@ -1034,3 +1034,16 @@ RAG → Tool Calling → Agent → State → Memory → LangGraph → HITL → P
 - 重启服务后仍能恢复之前的会话
 - 使用 aget_state_history 查看 checkpoint
 - 理解 SQLite 与 PostgreSQL 的适用场景
+
+# Day 39
+
+## Learned LangGraph Streaming + FastAPI + SSE + Persistence + Store
+
+- 理解 Checkpointer 与 Store 的区别
+- 独立完成 Store 的 put/get/search/delete 操作
+- 能够解释 namespace、key 和 value
+- 将 Store 接入 LangGraph 节点
+- 通过 user_id 读取对应的长期记忆
+- 验证同一用户的不同 thread_id 能共享资料
+- 验证不同用户的资料相互隔离
+- 理解 InMemoryStore 不能提供重启后的持久化
