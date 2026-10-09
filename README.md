@@ -1010,3 +1010,15 @@ RAG → Tool Calling → Agent → State → Memory → LangGraph → HITL → P
 - 通过 POST /chat/stream 获取 SSE 响应
 - 使用 httpx 客户端实时打印模型输出
 - 能够解释 StreamingResponse 和 SSE 的区别
+
+# Day 37
+
+## Learned LangGraph Streaming + FastAPI + SSE + Persistence
+
+- 能够解释 MessagesState 的作用
+- 能够解释 Checkpointer 与 thread_id 的关系
+- 同一 thread_id 的第二轮能够引用上一轮信息
+- 不同 thread_id 的会话相互隔离
+- FastAPI 接口可以持续返回 SSE token
+- 能够说明 MemorySaver 重启后为什么会丢失数据
+- 能够区分短期记忆与长期记忆
