@@ -930,7 +930,7 @@ Agent State
 
 # Day 34
 
-## Learned Langgraph Agent Persistence
+## Learned Langgraph Agent Persistence Persistence 解决 Agent 状态能不能保存
 
                          User
                           │
@@ -968,3 +968,33 @@ Agent State
                          Checkpoint
                               ↓
                             END
+
+RAG → Tool Calling → Agent → State → Memory → LangGraph → HITL → Persistence
+
+# Day 35
+
+## Learned Langgraph Agent Stream Streaming 解决 Agent 执行过程能不能实时看到
+
+                       LangGraph
+                           │
+                           ▼
+                      graph.stream
+                           │
+        ┌──────────────────┼──────────────────┐
+        │                  │                  │
+        ▼                  ▼                  ▼
+     updates            messages            custom
+        │                  │                  │
+        │                  │                  │
+        ▼                  ▼                  ▼
+    Node状态             Token             自定义事件
+        │                  │                  │
+        └──────────────────┼──────────────────┘
+                           ▼
+                      Backend Stream
+                           │
+                           ▼
+                      SSE / WebSocket
+                           │
+                           ▼
+                        React UI
