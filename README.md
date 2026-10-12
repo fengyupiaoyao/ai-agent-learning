@@ -1047,3 +1047,7 @@ RAG → Tool Calling → Agent → State → Memory → LangGraph → HITL → P
 - 验证同一用户的不同 thread_id 能共享资料
 - 验证不同用户的资料相互隔离
 - 理解 InMemoryStore 不能提供重启后的持久化
+
+# Day 40
+
+## Learned LangGraph 语义检索、Embedding 与自动提取
