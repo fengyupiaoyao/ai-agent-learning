@@ -1076,3 +1076,14 @@ Store 保存
 - 理解 TTL 和 Confidence
 - 完成 MemoryManager
 
+# Day 42
+
+## MCP 核心概念与架构
+
+- 能够解释 Host、Client、Server 的区别
+- 能够区分 Tools、Resources、Prompts
+- 理解 JSON-RPC 与传输层的区别
+- 能够说明 stdio 与 Streamable HTTP 的使用场景
+- 完成本地能力注册表代码
+- 完成至少 3 个测试
+- 画出 LangGraph + MCP Client + MCP Server 架构图
