@@ -1051,3 +1051,28 @@ RAG → Tool Calling → Agent → State → Memory → LangGraph → HITL → P
 # Day 40
 
 ## Learned LangGraph 语义检索、Embedding 与自动提取
+
+用户输入
+   ↓
+LLM 提取记忆
+   ↓
+Embedding
+   ↓
+Store 保存
+   ↓
+语义检索
+   ↓
+注入 Agent Context
+
+# Day 41
+
+## Learned LangGraph Agent Memory Engineering：记忆去重、更新、遗忘机制与质量评估
+
+- 实现 Memory Importance 判断
+- 实现结构化 Memory Schema
+- 实现 Embedding 相似度检测
+- 实现 Memory Merge
+- 实现 Memory Update
+- 理解 TTL 和 Confidence
+- 完成 MemoryManager
+
