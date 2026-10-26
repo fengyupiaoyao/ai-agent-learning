@@ -1087,3 +1087,16 @@ Store 保存
 - 完成本地能力注册表代码
 - 完成至少 3 个测试
 - 画出 LangGraph + MCP Client + MCP Server 架构图
+
+# Day 43
+
+## MCP Server
+
+- 安装并记录 MCP Python SDK 版本
+- 使用 MCPServer 创建真实 MCP Server
+- 成功注册并调用 search_notes Tool
+- 成功读取 research://topics Resource
+- 成功获取 create_research_prompt Prompt
+- 通过 MCP Inspector 验证三类能力
+- pytest 正常与错误场景测试通过
+- 能解释 Server、Client 与 Host 的职责边界
