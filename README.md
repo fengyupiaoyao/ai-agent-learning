@@ -1113,3 +1113,16 @@ Store 保存
 - 获取 create_research_prompt Prompt
 - 封装可复用的 ResearchMCPClient
 - 能够解释 MCP Client 的连接生命周期
+
+# Day 45
+
+## MCP 与 LangGraph Agent 集成
+
+- 成功通过 Streamable HTTP 连接 MCP Server
+- 通过 MCPAdapter 动态发现工具
+- 成功创建 LangChain Agent
+- Agent 能根据用户问题选择 MCP 工具
+- 工具结果能够返回模型并生成最终答案
+- 测试正常结果与空搜索结果
+- 理解工具发现、模型决策、执行和结果反馈的完整循环
+- 为潜在危险的工具设计权限或审批机制
