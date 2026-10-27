@@ -10,12 +10,16 @@ def build_research_agent():
     if not settings.openai_api_key:
         raise ValueError("OpenAI API key is not set")
 
+    secret = settings.openai_api_key
     model = init_chat_model(
         settings.model_name,
         model_provider="openai",
         temperature=0,
-        api_key=settings.openai_api_key,
-        base_url="https://ws-wopagvlf3afu5baf.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+        api_key=secret.get_secret_value(),
+        base_url=settings.openai_base_url,
+        timeout=settings.request_timeout,
+        max_retries=settings.max_retries,
+        log_level=settings.log_level,
     )
 
     return create_agent(
