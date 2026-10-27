@@ -1100,3 +1100,16 @@ Store 保存
 - 通过 MCP Inspector 验证三类能力
 - pytest 正常与错误场景测试通过
 - 能解释 Server、Client 与 Host 的职责边界
+
+# Day 44
+
+## MCP Client：发现工具与调用工具
+
+- 成功使用 stdio 连接 Day 43 的 Server
+- 读取服务端身份、协议版本与能力信息
+- 动态发现 Tools，并打印参数 Schema
+- 成功调用 search_notes 并检查 is_error
+- 读取 research://topics Resource
+- 获取 create_research_prompt Prompt
+- 封装可复用的 ResearchMCPClient
+- 能够解释 MCP Client 的连接生命周期
