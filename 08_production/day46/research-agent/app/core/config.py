@@ -13,6 +13,7 @@ class Settings(BaseSettings):
 
     model_name: str = "qwen3.8-max"
     openai_api_key: SecretStr | None = None
+    openai_base_url: str = "https://ws-wopagvlf3afu5baf.cn-beijing.maas.aliyuncs.com/compatible-mode/v1"
 
     request_timeout: int = 30
     max_retries: int = 3

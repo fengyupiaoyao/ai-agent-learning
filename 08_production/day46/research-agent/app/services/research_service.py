@@ -17,7 +17,7 @@ class AgentTimeoutError(Exception):
 
 
 class ResearchService:
-    def __init__(self, agent, timeout_seconds: int = 30):
+    def __init__(self, agent=None, timeout_seconds: int = 30):
         self.agent = agent or build_research_agent()
         self.timeout_seconds = timeout_seconds
         self.concurrency_limiter = ConcurrencyLimiter(max_concurrency=10)

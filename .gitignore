@@ -1,5 +1,6 @@
 # IDE - JetBrains
 .idea/
+.vscode/
 
 # 本地密钥配置
 .env
