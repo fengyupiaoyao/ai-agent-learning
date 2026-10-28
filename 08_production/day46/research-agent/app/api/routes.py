@@ -21,9 +21,5 @@ async def run_agent(
     request: AgentRequest,
     service: ResearchService = Depends(get_research_service)
 ):
-    try:
-        answer = await service.run(request.question)
-        return AgentResponse(answer=answer)
-    except Exception as e:
-        logger.exception("Agent 执行失败 | question=%s | error_type=%s", request.question, type(e).__name__)
-        raise HTTPException(status_code=500, detail=str(e))
+    answer = await service.run(request.question)
+    return AgentResponse(answer=answer)

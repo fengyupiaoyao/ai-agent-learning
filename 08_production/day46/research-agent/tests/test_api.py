@@ -46,3 +46,10 @@ def test_empty_question():
     )
 
     assert response.status_code == 422
+
+
+def test_request_id_is_returned():
+    response = client.get("/health")
+
+    assert response.status_code == 200
+    assert response.headers["X-Request-Id"]
