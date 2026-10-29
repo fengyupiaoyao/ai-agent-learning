@@ -1252,3 +1252,32 @@ Ruff 和 pytest 在本地都能运行。
 
 ## Docker 容器化与 Agent 环境一致性
 
+- 本地 FastAPI 服务可正常启动
+确认 /health 返回成功。
+- Dockerfile 构建成功
+docker compose build 无错误。
+- 容器启动与端口映射正常
+可以从宿主机访问 localhost:8000。
+- 日志和健康检查正常
+能查看容器日志，健康检查最终通过。
+- 密钥没有进入镜像或 Git
+检查 .dockerignore、.gitignore 和配置注入方式。
+- CI 可以构建 Docker 镜像
+将 docker build 加入 GitHub Actions。
+
+# Day 54
+
+## Agent 部署、环境隔离与发布策略
+
+- 区分开发、测试、生产环境
+知道各环境应使用独立配置、密钥和数据源。
+- 构建带 Git SHA 的 Docker 镜像
+能够根据提交记录找到对应镜像版本。
+- 通过环境变量指定 Compose 镜像
+不修改 YAML 即可切换运行版本。
+- 验证候选版本
+检查健康接口、日志和核心 Agent 接口。
+- 完成回滚演练
+能够切回已知可用的旧镜像。
+- 理解 Agent 发布风险
+能够说明质量退化、成本变化与工具副作用如何处理。
