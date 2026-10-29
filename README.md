@@ -1295,3 +1295,15 @@ docker compose build 无错误。
 - CI：代码检查、自动测试和镜像构建通过
 - 容器部署：镜像可构建，容器能启动，健康检查可访问
 - 发布与回滚：镜像有明确版本，知道如何切换回已验证版本
+
+# Day 56
+
+## 生产部署架构与运行环境
+
+- 完成项目目录与 Python 虚拟环境搭建
+- 使用 Pydantic Settings 加载环境配置
+- 实现 FastAPI 首页、健康检查和 Agent 服务入口
+- 为关键接口编写 pytest 自动化测试
+- 验证 testing 配置和生产环境调试保护
+- 创建 .gitignore，确保本地 .env 不进入 Git
+- 画出一张 AI Agent 生产部署架构图
