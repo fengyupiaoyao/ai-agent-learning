@@ -1,0 +1,15 @@
+{
+  "version": "agent-v2",
+  "description": "More explicit evidence requirements",
+  "model": {
+    "name": "gpt-4.1-mini",
+    "temperature": 0
+  },
+  "prompt": {
+    "version": "prompt-v2",
+    "template": "请仅根据可验证的信息回答。先核实证据；如果证据不足，请明确说明无法确认，不要编造。"
+  },
+  "tools": ["search"],
+  "dataset_version": "eval-v1",
+  "evaluator_version": "keyword-v1"
+}

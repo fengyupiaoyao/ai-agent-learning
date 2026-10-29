@@ -1,0 +1,18 @@
+{
+  "run_id": "agent_v2-20261029T024822Z",
+  "timestamp": "2026-10-29T02:48:22.278631+00:00",
+  "agent_version": "agent-v2",
+  "config_fingerprint": "3489ab8d9eb701cee5605e348d4e467c21cfd185e0d5256787f9d8cfbbf4e842",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "prompt-v2",
+  "dataset_version": "eval-v1",
+  "evaluator_version": "keyword-v1",
+  "metrics": {
+    "passed": 9,
+    "total": 10,
+    "latency_ms": 880,
+    "estimated_cost_usd": 0.014,
+    "pass_rate": 0.9
+  },
+  "simulation": true
+}

@@ -1,0 +1,15 @@
+{
+  "version": "agent-v1",
+  "description": "Baseline prompt",
+  "model": {
+    "name": "gpt-4.1-mini",
+    "temperature": 0
+  },
+  "prompt": {
+    "version": "prompt-v1",
+    "template": "请根据已知信息回答问题。如果无法确定，请明确说明。"
+  },
+  "tools": ["search"],
+  "dataset_version": "eval-v1",
+  "evaluator_version": "keyword-v1"
+}
