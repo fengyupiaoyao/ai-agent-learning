@@ -1307,3 +1307,17 @@ docker compose build 无错误。
 - 验证 testing 配置和生产环境调试保护
 - 创建 .gitignore，确保本地 .env 不进入 Git
 - 画出一张 AI Agent 生产部署架构图
+
+![AI Agent 生产部署架构图](docs/images/production-architecture.png)
+
+# Day 57
+
+## Docker 基础与容器化 Agent 服务
+
+- 已理解 Dockerfile、Image、Container 的区别
+- 已创建 Dockerfile
+- 已创建 .dockerignore，并排除 .env
+- 已成功构建 ai-agent-api:day57 镜像
+- 已成功启动容器并完成端口映射
+- 已通过 /health 或 /docs 验证服务
+- 已查看容器日志，并能停止和删除容器
