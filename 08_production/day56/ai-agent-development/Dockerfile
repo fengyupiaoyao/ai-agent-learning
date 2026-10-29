@@ -21,6 +21,10 @@ COPY app ./app
 RUN useradd --create-home appuser
 USER appuser
 
+# 每 30 秒检查一次应用是否能响应
+HEALTHCHECK --interval=30s --timeout=3s --start-period=10s --retries=3 \
+  CMD python -c "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health/live', timeout=2)" || exit 1
+
 # 8. 声明应用使用的端口
 EXPOSE 8000
 

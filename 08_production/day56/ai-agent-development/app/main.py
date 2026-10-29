@@ -1,5 +1,7 @@
 from fastapi import FastAPI, HTTPException
 
+from contextlib import asynccontextmanager
+
 from app.config import get_settings
 
 settings = get_settings()
@@ -8,9 +10,22 @@ if settings.environment == "production" and settings.debug:
     raise HTTPException(
         status_code=500, detail="Debug mode is disabled in production")
 
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    app.state.ready = False
+
+    app.state.ready = True
+
+    try:
+        yield
+    finally:
+        app.state.ready = False
+
 app = FastAPI(
     title=settings.app_name,
     debug=settings.debug and settings.environment != "development",
+    lifespan=lifespan,
 )
 
 

@@ -1321,3 +1321,15 @@ docker compose build 无错误。
 - 已成功启动容器并完成端口映射
 - 已通过 /health 或 /docs 验证服务
 - 已查看容器日志，并能停止和删除容器
+
+# Day 58
+
+## 健康检查与服务启动管理
+
+- 理解容器运行状态、存活检查和就绪检查的区别
+- 在 FastAPI 中实现 /health/live
+- 在 FastAPI 中实现 /health/ready
+- 三个健康检查测试全部通过
+- 在 Dockerfile 中配置 HEALTHCHECK
+- 能够查看 Docker 健康状态并解释 unhealthy 的含义
+- 理解 FastAPI lifespan 的启动与关闭职责
