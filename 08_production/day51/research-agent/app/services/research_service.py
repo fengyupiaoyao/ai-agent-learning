@@ -63,3 +63,22 @@ class ResearchService:
                 elapsed,
             )
             raise AgentTimeoutError("Agent timed out") from exc
+
+    async def research(self, question: str) -> str:
+        result = await self.agent.ainvoke(
+            {
+                "messages": [
+                    {"role": "user", "content": question}
+                ]
+            }
+        )
+
+        if isinstance(result, str):
+            return result
+
+        if isinstance(result, dict):
+            for key in ("final_answer", "answer", "output"):
+                value = result.get(key)
+                if isinstance(value, str) and value.strip():
+                    return value
+        raise ValueError("No answer found in result")
