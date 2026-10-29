@@ -18,3 +18,5 @@ __pycache__/
 # Tests
 .pytest_cache/
 .coverage
+
+experiments/results/
