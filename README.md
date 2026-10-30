@@ -1187,6 +1187,8 @@ Store 保存
 - 理解超时后远端操作仍可能继续
 - pytest 全部通过
 
+![Agent 韧性架构图](docs/images/resilience-architecture.png)
+
 # Day 50
 
 ## Agent 评测与自动化回归测试
@@ -1346,3 +1348,18 @@ docker compose build 无错误。
 - 访问 /metrics 并查看指标文本
 - 运行 pytest，确认原有测试与新增测试通过
 - 能说明如何记录模型 Token 用量，以及日志脱敏原则
+
+# Day 60
+
+## AI Agent 可靠性设计：超时、重试、降级与熔断
+![Agent 韧性架构图](docs/images/resilience-architecture.png)
+
+- 理解 Timeout、Retry、Fallback、Circuit Breaker 的区别
+- 使用 HTTPX 配置连接、读取、写入和连接池超时
+- 使用 Tenacity 实现最多 3 次重试
+- 能够区分可重试和不可重试错误
+- 实现主模型失败后的备用模型降级
+- 实现 CLOSED、OPEN、HALF_OPEN 三种熔断状态
+- 运行熔断器测试并验证恢复过程
+- 能够解释 Agent 总执行时间预算与幂等性
+
