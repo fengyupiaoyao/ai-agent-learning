@@ -1398,3 +1398,27 @@ Agent 准备调用模型
 - 减少 RAG 检索数量。
 - 减少后续工具调用。
 - 提前结束任务并返回已有结果。
+
+完成项：
+- 创建 app/budget.py，实现 TokenUsage 和 TokenBudget
+- 创建 tests/test_budget.py，5 个测试全部通过
+- 实现模型调用前的预算检查
+- 实现模型调用后的实际 Token 统计
+- 计算 Input / Output Token 成本
+- 将预算管理器接入一个 LangGraph 模型节点
+- 设置 LangGraph recursion_limit
+- 实现预算超限时的友好错误处理
+
+
+# Day 62
+
+## Context Engineering 与 Memory Management
+
+- 理解 System Prompt、History、Memory、RAG 的区别
+- 使用 InMemorySaver 实现短期记忆
+- 理解 thread_id 的作用和会话隔离
+- 使用 graph.get_state() 查看会话状态
+- 实现历史消息裁剪
+- 使用 InMemoryStore 保存长期记忆
+- 实现长期记忆读取和检索
+- 理解 Checkpointer 与 Store 的区别
