@@ -81,7 +81,19 @@ class CircuitBreaker:
             return result
 
 
+def is_retryable_error(exc: Exception) -> bool:
+    if isinstance(exc, (httpx.TimeoutException, httpx.NetworkError)):
+        return True
+
+    if isinstance(exc, httpx.HTTPStatusError):
+        status = exc.response.status_code
+        return status in {429, 500, 502, 503, 504}
+
+    return False
+
 # type: ignore
+
+
 @retry(
     retry=retry_if_exception(is_retryable_error),
     stop=stop_after_attempt(3),
@@ -144,14 +156,3 @@ async def call_model_with_fallback(
                 "degraded": True,
                 "message": "Fallback URL also failed",
             }
-
-
-def is_retryable_error(exc: Exception) -> bool:
-    if isinstance(exc, (httpx.TimeoutException, httpx.NetworkError)):
-        return True
-
-    if isinstance(exc, httpx.HTTPStatusError):
-        status = exc.response.status_code
-        return status in {429, 500, 502, 503, 504}
-
-    return False
