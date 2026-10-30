@@ -1,0 +1,23 @@
+# 敏感配置
+.env
+.env.*
+
+# Python 缓存
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# 虚拟环境
+.venv/
+venv/
+
+# Git 文件
+.git/
+.gitignore
+
+# 测试文件
+tests/
+
+# 本地编辑器配置
+.vscode/
+.idea/

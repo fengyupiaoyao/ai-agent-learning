@@ -1333,3 +1333,16 @@ docker compose build 无错误。
 - 在 Dockerfile 中配置 HEALTHCHECK
 - 能够查看 Docker 健康状态并解释 unhealthy 的含义
 - 理解 FastAPI lifespan 的启动与关闭职责
+
+# Day 59
+
+## AI Agent 可观测性：日志、指标与链路追踪
+
+- 能解释 Logs、Metrics、Traces 的区别
+- 实现带 request_id 的请求日志中间件
+- 日志中包含状态码与请求耗时
+- 使用 Counter 记录请求次数
+- 使用 Histogram 记录请求耗时
+- 访问 /metrics 并查看指标文本
+- 运行 pytest，确认原有测试与新增测试通过
+- 能说明如何记录模型 Token 用量，以及日志脱敏原则
