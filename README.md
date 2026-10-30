@@ -1422,3 +1422,19 @@ Agent 准备调用模型
 - 使用 InMemoryStore 保存长期记忆
 - 实现长期记忆读取和检索
 - 理解 Checkpointer 与 Store 的区别
+
+# Day 63
+
+## 上下文压缩与信息优先级（Context Compression & Information Prioritization）
+
+- 理解 Context Window、Truncation、Summarization 的区别
+- 理解为什么不能只保留最近 N 条消息
+- 掌握 system、goal、constraint、fact 等信息优先级
+- 创建 day63_context_compression 项目
+- 实现 ContextItem 和优先级映射
+- 实现信息去重与优先级排序
+- 实现 Token Budget 检查
+- 实现必须保留信息的超预算异常处理
+- 运行 main.py，观察压缩结果
+- 运行 pytest，5 项测试全部通过
+- 能够解释 Day 62 与 Day 63 的区别
