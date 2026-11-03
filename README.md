@@ -1438,3 +1438,19 @@ Agent 准备调用模型
 - 运行 main.py，观察压缩结果
 - 运行 pytest，5 项测试全部通过
 - 能够解释 Day 62 与 Day 63 的区别
+
+# Day 64
+
+## 长期记忆存储、检索与更新（Long-term Memory Storage, Retrieval & Update）
+
+- 理解短期记忆与长期记忆的区别
+- 理解 LangGraph Checkpointer 和 Store
+- 设计 Memory 数据结构
+- 完成 SQLite 数据库初始化
+- 实现 Memory CRUD
+- 实现重复记忆检测
+- 实现记忆冲突保护与更新
+- 实现关键词 Memory Retrieval
+- 将 MemoryStore 接入 LangGraph
+- 验证程序重启后数据仍然存在
+- 完成 8 个 pytest 测试
