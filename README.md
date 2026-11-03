@@ -1467,3 +1467,17 @@ Agent 准备调用模型
 - 完成 RequestController 请求控制器
 - 运行 pytest，测试全部通过
 - 理解单进程限流与分布式限流的区别
+
+# Day 66
+
+## 幂等性、重复执行与任务去重
+
+- 理解幂等性与重复执行问题
+- 理解 Idempotency Key 的用途
+- 理解 request_hash 与幂等键的区别
+- 使用 SQLite UNIQUE 约束防止重复任务
+- 实现 create_or_get 原子任务创建逻辑
+- 实现重复请求结果缓存
+- 实现相同 Key、不同请求的冲突检测
+- 完成 3 个 pytest 测试并通过
+- 理解外部副作用与 Exactly Once 的限制
