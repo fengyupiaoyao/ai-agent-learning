@@ -1454,3 +1454,16 @@ Agent 准备调用模型
 - 将 MemoryStore 接入 LangGraph
 - 验证程序重启后数据仍然存在
 - 完成 8 个 pytest 测试
+
+# Day 65
+
+## Agent 并发控制与速率限制
+
+- 理解并发数与请求频率的区别
+- 理解 RPM、TPM、HTTP 429、Retry-After
+- 使用 asyncio.Semaphore 限制并发数
+- 使用 asyncio.Lock 实现请求频率控制
+- 实现指数退避和随机抖动
+- 完成 RequestController 请求控制器
+- 运行 pytest，测试全部通过
+- 理解单进程限流与分布式限流的区别
