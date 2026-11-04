@@ -1481,3 +1481,18 @@ Agent 准备调用模型
 - 实现相同 Key、不同请求的冲突检测
 - 完成 3 个 pytest 测试并通过
 - 理解外部副作用与 Exactly Once 的限制
+
+# Day 67
+
+## 故障恢复、Checkpoint 与补偿机制
+
+- 理解 Checkpoint、Resume、Recovery 的区别
+- 理解 Saga 和 Compensation 的作用
+- 创建 checkpoint.py，实现状态保存与读取
+- 创建 services.py，实现正向操作和补偿操作
+- 创建 workflow.py，实现逐步保存 Checkpoint
+- 实现失败后逆序补偿
+- 实现补偿步骤去重
+- pytest 三个基础测试全部通过
+- 完成任务 A：模拟中途崩溃并恢复
+- 完成任务 B：模拟补偿失败并重试
