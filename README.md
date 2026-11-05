@@ -1496,3 +1496,19 @@ Agent 准备调用模型
 - pytest 三个基础测试全部通过
 - 完成任务 A：模拟中途崩溃并恢复
 - 完成任务 B：模拟补偿失败并重试
+
+# Day 68
+
+## 安全边界、输入校验与 Prompt Injection
+
+- 理解 Direct Prompt Injection 和 Indirect Prompt Injection
+- 理解可信指令与不可信数据的区别
+- 使用 Pydantic 实现请求字段校验
+- 限制用户 ID 和输入长度
+- 实现 SecurityPolicy
+- 使用 JSON 序列化构造安全 Prompt
+- 实现 Mock LLM 和 Knowledge Agent
+- 测试直接注入拦截
+- 测试间接注入文档可以作为数据分析
+- 理解工具参数必须由服务端校验
+- 阅读 OWASP Prompt Injection 文档
