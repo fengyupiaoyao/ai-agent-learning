@@ -1528,3 +1528,19 @@ Agent 准备调用模型
 - 验证模型额外传入的参数会被拒绝
 - 能够解释为什么不能只用 System Prompt 控制工具权限
 
+# Day 70
+
+## 可靠性综合演练与故障注入（Reliability Testing & Fault Injection）
+
+- 理解 Fault Injection 的作用和应用场景
+- 能够使用 asyncio.wait_for 实现超时控制
+- 能够区分可重试和不可重试异常
+- 实现 Timeout + Retry + Fallback
+- 完成故障模拟器 faults.py
+- 完成 Checkpoint 保存与读取
+- 完成 ReliabilityAgent
+- 完成 4 个 pytest 测试文件
+- 成功运行 python main.py
+- 成功运行 pytest -v
+- 理解故障恢复与幂等性的关系
+- 整理故障演练报告
