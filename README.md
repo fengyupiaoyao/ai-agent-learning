@@ -1512,3 +1512,19 @@ Agent 准备调用模型
 - 测试间接注入文档可以作为数据分析
 - 理解工具参数必须由服务端校验
 - 阅读 OWASP Prompt Injection 文档
+
+# Day 69
+
+## 权限控制与工具白名单（Tool Permissions & Allowlist）
+
+- 创建 day69_tool_permissions 项目目录
+- 实现 UserContext、ToolCall 和 ToolResult
+- 实现 viewer、researcher、operator、admin 四种角色
+- 实现 ToolRegistry 和工具参数白名单
+- 实现 ToolRouter 服务端权限检查
+- 实现高风险操作审批流程
+- 完成 7 个 pytest 测试并全部通过
+- 验证无权限用户无法执行 delete_file
+- 验证模型额外传入的参数会被拒绝
+- 能够解释为什么不能只用 System Prompt 控制工具权限
+
