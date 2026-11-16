@@ -1544,3 +1544,23 @@ Agent 准备调用模型
 - 成功运行 pytest -v
 - 理解故障恢复与幂等性的关系
 - 整理故障演练报告
+
+# Day 71
+
+## Planning：复杂任务规划与动态执行
+
+- 理解 Planning 的核心概念
+- 理解 Task Decomposition
+- 理解 ReAct 架构
+- 理解 Plan-and-Execute 架构
+- 理解 Dynamic Planning
+- 能够设计 PlanningState
+- 实现 Planner Node
+- 实现 Executor Node
+- 实现 Evaluator Node
+- 实现 Replanner Node
+- 使用 LangGraph 连接四个 Node
+- 成功运行完整工作流
+- 成功模拟任务失败
+- 成功触发动态重新规划
+- 完成 pytest 自动化测试
