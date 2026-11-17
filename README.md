@@ -1580,3 +1580,18 @@ Agent 准备调用模型
 - 上游任务失败时，下游任务变成 blocked
 - 完成 LangGraph 调度流程封装
 - pytest 测试全部通过
+
+# Day 73
+
+## 多 Agent 角色设计与职责边界
+
+- 定义 Researcher、Analyst、Reviewer 三个角色
+- 为每个角色定义 responsibility
+- 使用 Pydantic 定义输入输出契约
+- 为每个角色设置 allowed_tools
+- 实现工具调用权限检查
+- 实现三个独立 Agent 函数
+- 使用 LangGraph 组织多 Agent 工作流
+- 实现 Reviewer 反馈和最大评审轮数控制
+- 测试未授权工具调用
+- 测试完整协作流程
