@@ -1612,3 +1612,17 @@ Agent 准备调用模型
 - 实现 Analyst → Reviewer 交接
 - 使用 LangGraph 组织完整交接流程
 - 完成交接协议和工作流测试
+
+# Day 75
+
+## 并行研究与结果合并（Parallel Research & Result Merging）
+
+- 理解串行执行与并行执行的区别
+- 理解 LangGraph Send 的用途
+- 理解 Annotated + operator.add Reducer
+- 成功创建 day75_parallel_research 项目
+- 成功动态分发三个研究主题
+- 成功收集多个 Worker 的结果
+- 成功实现结果去重与来源合并
+- 成功识别并保留冲突结果
+- pytest 全部通过
