@@ -1626,3 +1626,17 @@ Agent 准备调用模型
 - 成功实现结果去重与来源合并
 - 成功识别并保留冲突结果
 - pytest 全部通过
+
+
+# Day 76
+
+## 工具沙箱与高风险操作审批
+
+- 理解 Tool Risk Level
+- 定义 LOW / MEDIUM / HIGH
+- 实现 ToolDefinition
+- 实现 PolicyEngine
+- 实现 ApprovalManager
+- 实现 SafeToolExecutor
+- 实现 Sandbox Path Check
+- 完成至少 5 个测试用例
