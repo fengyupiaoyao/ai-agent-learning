@@ -1,3 +1,6 @@
+from app.state import AgentState
+
+
 class ApprovalManager:
     def request_approval(
         self,
@@ -11,3 +14,15 @@ class ApprovalManager:
         answer = input("Approve? [y/N]: ")
 
         return answer.lower() == "y"
+
+
+def approve(state: AgentState, approved: bool):
+    state.approval_result = approved
+    state.approval_required = False
+
+    if approved:
+        state.status = "running"
+    else:
+        state.status = "rejected"
+
+    return state

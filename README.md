@@ -1640,3 +1640,16 @@ Agent 准备调用模型
 - 实现 SafeToolExecutor
 - 实现 Sandbox Path Check
 - 完成至少 5 个测试用例
+
+# Day 77
+
+## 长流程暂停、恢复与人工介入
+
+- 理解 Checkpoint
+- 理解 Interrupt
+- 理解 Resume
+- 创建 AgentState
+- 实现 CheckpointStore
+- 实现可暂停的 Workflow
+- 模拟程序退出后恢复
+- 完成人工审批后 Resume

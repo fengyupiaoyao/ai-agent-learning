@@ -1,0 +1,14 @@
+{
+  "task": "research company",
+  "completed_steps": [
+    "search",
+    "collect_data",
+    "analyze",
+    "generate_report",
+    "send_report"
+  ],
+  "current_step": "send_report",
+  "status": "completed",
+  "approval_required": false,
+  "approval_result": true
+}
