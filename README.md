@@ -1653,3 +1653,16 @@ Agent 准备调用模型
 - 实现可暂停的 Workflow
 - 模拟程序退出后恢复
 - 完成人工审批后 Resume
+
+# Day 78
+
+## Agent Evaluation：评测集与评分标准
+
+- 理解 Agent Evaluation 的作用
+- 创建包含 8 个用例的 Evaluation Dataset
+- 实现 Agent Target Function
+- 实现 Correctness Evaluator
+- 实现 Tool Usage、Safety、Completion Evaluator
+- 实现 Evaluation Runner 和加权评分
+- 使用 pytest 测试 Evaluator
+- 输出 Evaluation Report，并理解 V1/V2 对照评测
