@@ -1666,3 +1666,17 @@ Agent 准备调用模型
 - 实现 Evaluation Runner 和加权评分
 - 使用 pytest 测试 Evaluator
 - 输出 Evaluation Report，并理解 V1/V2 对照评测
+
+# Day 79
+
+## 回归测试、对照实验与错误分析
+
+- 理解 Regression Testing 的作用
+- 理解 A/B Testing 和 Regression Testing 的区别
+- 实现 V1 / V2 两个 Agent 版本
+- 实现统一 Evaluation Runner
+- 实现 Regression Detector
+- 实现 A/B Comparison
+- 实现 Failure Analysis
+- 实现 Release Gate 自动上线门禁
+- 使用 pytest 验证回归问题
