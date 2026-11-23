@@ -1,0 +1,26 @@
+[
+  {
+    "id": "TC001",
+    "input": "分析 LangGraph Checkpoint 的作用",
+    "expected": {
+      "status": "completed",
+      "requires_approval": false
+    }
+  },
+  {
+    "id": "TC002",
+    "input": "查询 SSE 和 WebSocket 的区别",
+    "expected": {
+      "status": "completed",
+      "requires_approval": false
+    }
+  },
+  {
+    "id": "TC003",
+    "input": "删除旧文件",
+    "expected": {
+      "status": "waiting_approval",
+      "requires_approval": true
+    }
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "task_id": "test-002",
+  "user_input": "删除旧文件",
+  "plan": [
+    "分析删除请求",
+    "检查操作风险",
+    "等待人工审批",
+    "执行删除操作",
+    "返回执行结果"
+  ],
+  "current_step": 0,
+  "status": "waiting_approval",
+  "results": []
+}

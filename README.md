@@ -1680,3 +1680,20 @@ Agent 准备调用模型
 - 实现 Failure Analysis
 - 实现 Release Gate 自动上线门禁
 - 使用 pytest 验证回归问题
+
+# Day 80
+
+## 高级架构阶段项目验收
+
+- 完成系统整体架构图
+- 完成 Orchestrator 统一调度入口
+- 完成 Planner 任务规划
+- 完成至少两个 Agent 的协作流程
+- 完成 Tool Safety 风险控制
+- 危险操作必须经过人工审批
+- 完成 Checkpoint 状态保存
+- 完成 Resume 恢复流程
+- 完成 Evaluation Dataset 和评测报告
+- 完成 V1/V2 Regression 对比
+- 完成 Release Gate 发布判断
+- 完成 architecture.md 和 known_issues.md
