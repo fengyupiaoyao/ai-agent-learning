@@ -1697,3 +1697,18 @@ Agent 准备调用模型
 - 完成 V1/V2 Regression 对比
 - 完成 Release Gate 发布判断
 - 完成 architecture.md 和 known_issues.md
+
+
+# Day 81
+
+## Research & Knowledge Agent 需求与架构设计
+
+- 明确 Research & Knowledge Agent 的使用场景和项目目标
+- 完成六个核心模块的职责划分
+- 理解 Client → FastAPI → Service → LangGraph 的架构
+- 创建 docs/requirements.md
+- 创建 docs/architecture.md
+- 创建 app/schemas/research.py
+- 创建 app/agents/state.py
+- 创建测试文件并通过 4 项测试
+- 明确 Day 82–90 的项目开发方向
