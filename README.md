@@ -1712,3 +1712,21 @@ Agent 准备调用模型
 - 创建 app/agents/state.py
 - 创建测试文件并通过 4 项测试
 - 明确 Day 82–90 的项目开发方向
+
+# Day 82
+
+## 文档导入、解析与元数据管理（Document Ingestion）
+
+- 安装 pypdf、langchain-core、langchain-text-splitters
+- 实现 PDF 文件加载
+- 实现 TXT 文件加载
+- 实现 Markdown 文件加载
+- 统一使用 LangChain Document 数据结构
+- 实现 Metadata 自动生成
+- 实现 RecursiveCharacterTextSplitter
+- 增加中文文本切分规则
+- 实现 DocumentService.ingest()
+- 处理文件不存在、格式不支持和解析失败
+- 完成 7 项单元测试
+- 成功导入一份真实 PDF 并检查页码
+- 成功运行 TXT / Markdown 导入测试

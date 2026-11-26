@@ -1,0 +1,12 @@
+LangGraph 是一个用于构建有状态 Agent 工作流的框架。
+
+LangGraph 使用 StateGraph 定义工作流。
+
+Node 负责执行具体业务逻辑。
+
+Edge 负责定义节点之间的执行关系。
+
+Conditional Edge 可以根据状态决定下一步执行哪个节点。
+
+Checkpoint 用于保存工作流执行状态，
+支持暂停、恢复和持久化。
