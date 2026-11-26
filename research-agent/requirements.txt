@@ -1,3 +1,6 @@
 pypdf
 langchain-core
 langchain-text-splitters
+langchain-openai
+langchain-chroma
+chromadb

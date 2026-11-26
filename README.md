@@ -1730,3 +1730,23 @@ Agent 准备调用模型
 - 完成 7 项单元测试
 - 成功导入一份真实 PDF 并检查页码
 - 成功运行 TXT / Markdown 导入测试
+
+# Day 83
+
+## 知识库索引、检索与过滤（Knowledge Base Indexing & Retrieval）
+
+- 安装 langchain-openai、langchain-chroma、chromadb
+- 实现 EmbeddingService
+- 理解 embed_query 和 embed_documents 的区别
+- 实现 Chroma VectorStore
+- 实现 Document 向量写入
+- 实现 Chunk ID 生成
+- 实现 similarity_search Top-K 检索
+- 实现 similarity_search_with_score
+- 实现 Metadata Filtering
+- 实现 KnowledgeRetriever
+- 实现 KnowledgeBaseService
+- 完成 7 项单元测试
+- 使用真实 Embedding API 完成语义检索
+- 验证不同用户之间的 Metadata 隔离
+- 验证向量数据库持久化，重启后仍能查询
