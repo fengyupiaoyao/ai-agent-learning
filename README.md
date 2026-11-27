@@ -1750,3 +1750,20 @@ Agent 准备调用模型
 - 使用真实 Embedding API 完成语义检索
 - 验证不同用户之间的 Metadata 隔离
 - 验证向量数据库持久化，重启后仍能查询
+
+# Day 84
+
+## 研究任务规划与工具调用（Research Planning & Tool Calling）
+
+- 安装 langchain-tavily 等依赖并配置 API Key
+- 使用 Pydantic 定义 ResearchStep
+- 使用 Pydantic 定义 ResearchPlan
+- 扩展 ResearchState，增加研究计划和执行结果
+- 实现 knowledge_search 工具
+- 实现 web_search 工具
+- 理解 bind_tools 和 tool_choice
+- 实现 ResearchGraph 和 ToolNode
+- 实现 Planner → Executor → Tool 的执行循环
+- 实现 ResearchService 统一入口
+- 完成 6 项单元测试
+- 真实运行一次研究任务，检查计划和工具调用结果
